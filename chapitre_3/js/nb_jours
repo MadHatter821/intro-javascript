@@ -1,0 +1,14 @@
+var month = Number(prompt("Num du mois:"));
+
+if ((month < 1) || (month > 12)) {
+	console.log("Error");
+} else if (month === 2) {
+	console.log("Février c'est la Neige mais 29j seulement ...");
+} else if (((month < 8) && ((month%2) === 1)) || ((month > 7) && ((month%2) === 0))) {
+	console.log("Month N°" + month + ": 31j");
+} else {
+	console.log("Month N°" + month + ": 30j");
+}
+
+// Des Critiques sur cette méthode ?
+// n'hésitez pas
