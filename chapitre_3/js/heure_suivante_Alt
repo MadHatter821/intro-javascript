@@ -1,0 +1,40 @@
+var x = 1;
+
+if (x > 0) {
+	var h = Number(prompt("Heure: "));
+	if ((h >= 0) && (h < 24)) {
+		var m = Number(prompt("Minute: "));
+		if ((m >= 0) && (m < 60)) {
+			var s = Number(prompt("Seconde: "));
+			if ((s >= 0) && (s < 60)) {
+			s++;
+			} else {
+				x--;
+			}
+		} else {
+			x--;
+		}
+	} else {
+		x--;
+	}
+
+}
+
+
+if (s === 60) {
+	s=00;
+	m++; 
+	if (m === 60) {
+		m= 00;
+		h++;
+		if (h===24) {
+			h=00;
+		}
+	}
+console.log("Dans 1' il sera " + h + ":" + m + ":" + s);
+} else {
+	console.log("Error");
+}
+
+
+// Des critiques ou des optimisations à proposer?
