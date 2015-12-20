@@ -1,0 +1,20 @@
+var valeurs = [11, 3, 7, 2, 21, 8, 9, 10];
+
+//Sol1
+var k = i-1;
+for (var i=1; i < valeurs.length; i++) {
+	if ( (valeurs[k] - valeurs[i]) > 0 ) {
+	} else {
+		k = i;
+	}
+}
+console.log("Valeur Max: " + valeurs[k]);
+
+//Sol2
+var max = valeurs[0];
+for (var j = 1; j < valeurs.length; j++) {
+    if (valeurs[j] > max) {
+        max = valeurs[j];
+    }
+}
+console.log("Le maximum des éléments vaut " + max);
